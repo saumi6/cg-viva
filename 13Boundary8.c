@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <conio.h>
 #include <graphics.h>
-int count = 0;
 void fill(int x, int y, int fc, int bc)
 {
-    count++;
-    if (count > 1000) exit();
     if ((getpixel(x, y) != fc) && (getpixel(x, y) != bc))
     {
         putpixel(x, y, fc);

@@ -4,13 +4,15 @@
 void main()
 {
     int gd = DETECT, gm;
-    initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
     int x = 100, y = 200;
     int step = 20;
     int leg_height = 30;
+    initgraph(&gd, &gm, "C:\\Turboc3\\BGI");
     while (!kbhit())
     {
         cleardevice();
+        circle(x,y-75,15);
+        line(x-15,y-40,x+15,y-40);
         // Draw the body
         line(x, y, x, y - 60);
         // Draw the Left Leg

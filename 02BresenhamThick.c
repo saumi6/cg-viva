@@ -63,7 +63,7 @@ void main()
     scanf("%d %d", &x2, &y2);
     printf("Enter the thickness: ");
     scanf("%d",&thick);
-    for (i=0,i<thick;i++)
+    for (i=0;i<thick;i++)
     {
         bresenham(x1+i, y1, x2+i, y2);
     }

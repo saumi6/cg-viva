@@ -42,8 +42,13 @@ void main()
 {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
-    int xmin = 100, ymin = 100, xmax = 300, ymax = 200;
-    int x = 200, y = 150;
+    int xmin, ymin, xmax, ymax, x, y;
+    xmin = 100;
+    ymin = 100;
+    xmax = 300;
+    ymax = 200;
+    x = 200;
+    y = 150;
     rectangle(xmin, ymin, xmax, ymax);
     pointClipping(x, y, xmin, ymin, xmax, ymax);
     getch();
